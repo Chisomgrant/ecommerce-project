@@ -6,7 +6,7 @@ const CheckoutPage = () => {
   return (
     <>
       <title>Checkout</title>
-
+      <link rel="icon" type="" href="cart-favicon.png" />
       <CheckoutHeader />
 
       <div className="checkout-page">

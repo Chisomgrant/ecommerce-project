@@ -5,6 +5,7 @@ import Header from "../components/Header";
 const TrackingPage = () => {
   return (
     <>
+      <title>Tracking</title>
           <Header/>
 
       <div class="tracking-page">
