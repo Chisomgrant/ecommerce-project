@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import Header from "../components/Header";
+import CheckMark from '../assets/images/icons/checkmark.png';
 
 const HomePage = () => {
   return (
@@ -51,7 +52,7 @@ const HomePage = () => {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMark} />
               Added
             </div>
 
@@ -100,7 +101,7 @@ const HomePage = () => {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMark} />
               Added
             </div>
 
@@ -149,7 +150,7 @@ const HomePage = () => {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src={CheckMark} />
               Added
             </div>
 
