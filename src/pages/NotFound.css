@@ -1,0 +1,42 @@
+.notfound-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #111, #222);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.notfound-title {
+  font-size: 120px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.notfound-subtitle {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.notfound-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.home-btn {
+  padding: 12px 24px;
+  background-color: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #ff1a1a;
+}
