@@ -4,19 +4,15 @@ import axios from "axios";
 import "./HomePage.css";
 import Header from "../components/Header";
 import CheckMark from "../assets/images/icons/checkmark.png";
+import { formatMoney } from "../utils/money";
 
-const HomePage = () => {
+const HomePage = ({cart}) => {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]); 
 
   useEffect(() => {
     axios.get("/api/products").then((response) => {
       setProducts(response.data);
     });
-  
-    axios.get("/api/cart-items").then((response) => {
-      setCart(response.data)
-    })
   }, []);
 
   return (
@@ -49,7 +45,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="product-price">
-                  ${(product.priceCents / 100).toFixed(2)}
+                  {formatMoney(product.priceCents)}
                 </div>
 
                 <div className="product-quantity-container">
