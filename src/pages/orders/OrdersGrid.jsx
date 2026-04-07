@@ -3,22 +3,22 @@ import { Fragment } from 'react';
 import OrdersHeader from './OrdersHeader';
 import OrdersDetailsGrid from './OrdersDetailsGrid';
 
-const OrdersGrid = ({orders}) => {
-    return (
-        <>
-            <div className="orders-grid">
-                      {orders.map((order) => {
-                        return (
-                            <div key={order.id} className="order-container">
-                                <OrdersHeader order={order} />
-                                
-                                <OrdersDetailsGrid order={order}/>
-            
-                          </div>
-                        );
-                      })}
-                    </div>
-        </>
+const OrdersGrid = ({ orders, loadCart }) => {
+  return (
+    <>
+      <div className="orders-grid">
+        {orders.map((order) => {
+          return (
+            <div key={order.id} className="order-container">
+              <OrdersHeader order={order} />
+
+              <OrdersDetailsGrid order={order} loadCart={loadCart} />
+
+            </div>
+          );
+        })}
+      </div>
+    </>
   )
 }
 
