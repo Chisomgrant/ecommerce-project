@@ -16,7 +16,7 @@ const OrdersDetailsGrid = ({ order , loadCart}) => {
           const orderAgain = async () => {
             await axios.post('/api/cart-items', {
               productId: orderProduct.product.id,
-              quantity: orderProduct.quantity
+              quantity: 1
             })
             await loadCart();
           }
